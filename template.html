@@ -11,9 +11,18 @@
       <!-- posts -->
     </ul>
     <form action="/send" method="post">
+      <span class="nameT">名前</span>
+      <input id="name-input" type="text" name="name" />
       <input id="message-input" type="text" name="message" />
       <button type="submit">送信</button>
     </form>
     <script src="/script.js"></script>
+   
+    <div>
+      <form action="/delete" method="post">
+        <input type="submit" value="削除">
+      </form>
+    </div>
+
   </body>
 </html>
