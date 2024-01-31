@@ -25,3 +25,15 @@ app.post("/send", async (request, response) => {
 });
 
 app.listen(3000);
+
+function time(){
+  var now = new Date();
+  var y = now.getFullYear();
+  var m = now.getMonth()+1;
+  var d = now.getDate();
+  var h = now.getHours();
+  var i = now.getMinutes();
+  var we = new Array("日", "月", "火", "水", "木", "金", "土");
+  var w = we[now.getDay()]
+  return "   ("+y+"年"+m+"月"+d+"日"+h+"時"+i+"分"+w+"曜日)"
+} 
