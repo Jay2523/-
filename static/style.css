@@ -1,3 +1,14 @@
 .app-title {
   color: #00ff5e;
 }
+h1{
+  background-color: aqua;
+}
+.nameT{
+  color:black;
+}
+body{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: smaller;
+  color: rgb(255, 0, 217);
+}
