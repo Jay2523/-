@@ -8,7 +8,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("static"));
 const prisma = new PrismaClient();
 
-const template = fs.readFileSync("./template.html", "utf-8");
 app.get("/", async (request, response) => {
   const posts = await prisma.post.findMany();
   const html = template.replace(
